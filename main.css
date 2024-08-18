@@ -1,0 +1,23 @@
+html, body
+{
+    background-color:#D1E9F6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.container
+{
+    display: grid;
+    place-items: center;
+}
+
+h1.title
+{
+    text-align: center;
+}
+
+p
+{
+    text-align:justify;
+}
