@@ -2,14 +2,18 @@ html, body
 {
     background-color:#D1E9F6;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    height: 100%;
-    margin: 0;
+    position: relative;
+    top: 15%;
+    bottom: 25%;
 }
 
 .container
 {
-    display: grid;
-    place-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 h1.title
@@ -17,7 +21,7 @@ h1.title
     text-align: center;
 }
 
-p
+p.text
 {
-    text-align:justify;
+    text-align:center;
 }
