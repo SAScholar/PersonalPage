@@ -1,7 +1,11 @@
 html, body
 {
-    background-color:#D1E9F6;
+    background-color:#C4DFDF;
     font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div.v1
+{
     position: relative;
     top: 15%;
     bottom: 25%;
@@ -20,9 +24,16 @@ html, body
 h1.title
 {
     text-align: center;
+    color: #7FA1C3;
 }
 
 p.text
 {
     text-align:center;
+    color: #7FA1C3;
+}
+
+a
+{
+    color: #7FA1C3;
 }
