@@ -10,7 +10,7 @@
                 let response = await fetch(url);
                 let jsonHitokoto = await response.json();
                 let hitokoto = document.createElement('text');
-                hitokoto.innerHTML = String(jsonHitokoto.hitokoto + " / " + jsonHitokoto.from_who);
+                let hitokoto.innerHTML = String(jsonHitokoto.hitokoto + " / " + jsonHitokoto.from_who);
                 last.append(hitokoto);
             }
             getHitokoto();
