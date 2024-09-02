@@ -4,6 +4,17 @@
         <title>Yiming's Homepage</title>
     </head>
     <body>
+        <script>
+            async function getHitokoto() {
+                let url = 'https://v1.hitokoto.cn/';
+                let response = await fetch(url);
+                let jsonHitokoto = await response.json();
+                let hitokoto = document.createElement('text');
+                hitokoto.innerHTML = String(jsonHitokoto.hitokoto + " / " + jsonHitokoto.from_who);
+                last.append(hitokoto);
+            }
+            getHitokoto();
+        </script>
         <div>
             <p> God said: "Love is patient." (<i>1 Corinthians 13:4</i>) </p>
         </div>
@@ -17,6 +28,7 @@
                 <p class="text">
                     <a href="mailto:me@prunusmume.io">Email</a> | <a href="https://blog.prunusmume.io">Blog</a> | <a href="https://t.me/eveningtaco">Telegram</a>
                 </p>
+                <p class="text" id="last"></p>
             </div>
         </div>
     </body>
